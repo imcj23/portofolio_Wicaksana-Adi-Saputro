@@ -161,10 +161,14 @@ ul li a:hover {
   border-radius: 100%;
 }
 .aboutme {
-  background-color: #6b7280;
-  color: #ffffff;
+  background-color:#ffffff;
+  color: var(--text-dark);
+  min-height: 100vh;
 }
 .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 80vh;
   max-width: var(--max-width);
   margin: auto;
@@ -196,12 +200,68 @@ ul li a:hover {
 .learned {
   background-color: var(--primary-color);
   color: #ffffff;
+  margin-top: 20px;
 }
 
 .learned:hover {
   background-color: var(--primary-color-dark);
   border-color: transparent;
 }
+.program {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: var(--extra-light);
+}
+.program-text{
+  padding: 10px;
+  margin-top: 220px;
+  margin-left: 100px;
+}
+.program-text h2{
+  font-size: 2.2rem;
+  text-align: center;
+}
+.program-text p {
+  text-align: justify;
+  text-indent: 30px;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px;
+  gap: 2rem;
+}
+.card-program{
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+  border: 3px solid var(--primary-color-dark);
+  border-radius: 10px;
+}
+.card img {
+width: 120px;
+margin-top: 15px;
+}
+.contact-me{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-text{
+  text-align: center;
+}
+.sosmed{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
 @media (width < 750px) {
   nav .checkbox {
     display: block;
@@ -240,4 +300,6 @@ ul li a:hover {
   .button {
     margin: auto;
   }
+
+  
 }
